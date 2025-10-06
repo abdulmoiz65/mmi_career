@@ -1,0 +1,155 @@
+:root {
+    --primary-color: #4b2673;
+    --secondary-color: #2d1850;
+    --accent-color: #6d28d9;
+    --success-color: #10b981;
+    --purple-color: #3c1361;
+    --purple-dark-1: #2a0e3c;
+    --purple-dark-2: #1e0930;
+    --purple-dark-3: #5b21b6;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --bg-light: #f8fafc;
+} 
+ 
+ body {
+      background: #f4f5f7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+     
+    }
+
+    
+/* LOGIN PAGE */
+
+/* Gradient for left panel */
+.login-container .gradient-left {
+  background: var(--purple-color) !important;
+}
+
+/* Divider */
+.login-container .divider {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+  background: #fff;
+  z-index: 1;
+}
+
+.login-container .divider::before,
+.login-container .divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 1px;
+  background: #ccc;
+}
+
+.login-container .divider::before { left: -50px; }
+.login-container .divider::after { right: -50px; }
+
+/* Logo image */
+.login-container img {
+  max-width: 220px;
+  margin: 0 auto 2rem;
+}
+
+
+
+
+    /* SIGNUP  */
+    .signup-container {
+      display: flex;
+      flex-wrap: wrap;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      overflow: hidden;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    /* Left side */
+    .signup-container .promo {
+      background: var(--purple-color);
+      color: #fff;
+      flex: 1 1 45%;
+      padding: 3rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .signup-container .promo img {
+      max-width: 220px;
+      margin: 0 auto 2rem;
+    }
+    .signup-container .promo h2 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    /* Right side */
+    .signup-container .signup-form {
+      flex: 1 1 55%;
+      padding: 3rem 2rem;
+    }
+    .signup-container .signup-form h3 {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .signup-container .signup-form p {
+      color: #6b7280;
+      margin-bottom: 2rem;
+    }
+    .signup-container .form-control {
+      border-radius: 10px;
+      padding: 0.75rem;
+    }
+
+    .signup-container .btn-primary-gradient {
+      background: linear-gradient(90deg,#6366f1,#4f46e5);
+      border: none;
+      color: #fff;
+      font-weight: 600;
+      padding: 0.75rem;
+      border-radius: 30px;
+      transition: all .3s ease;
+    }
+    .signup-container .btn-primary-gradient:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    .signup-container .google-btn {
+      background: #fff;
+      color: #444;
+      border: 1px solid #ddd;
+      border-radius: 30px;
+      padding: 0.7rem;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all .3s ease;
+    }
+    .signup-container .google-btn:hover {
+      background: #f8f8f8;
+    }
+
+    .signup-container .login-link {
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .signup-container .login-link a { text-decoration: none; color: #4f46e5; }
+
+    @media (max-width: 768px) {
+      .signup-container { flex-direction: column; }
+      .signup-container .promo { padding: 2rem 1.5rem; }
+      .signup-container .signup-form { padding: 2rem 1.5rem; }
+    }
