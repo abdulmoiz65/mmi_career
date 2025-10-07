@@ -15,7 +15,7 @@
 <nav class="navbar sticky-top">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="{{ asset('images/mmi-logo.png') }}" alt="MMI Logo" class="me-2" style="height: 60px;">
+            <img src="{{ asset('images/mmi-logo.png') }}" alt="MMI Logo" class="me-2" >
             
         </a>
 

@@ -4,7 +4,7 @@
   <div class="col-md-10 grid-margin stretch-card mx-auto">
     <div class="card">
       <div class="card-body">
-        <h4 class="card-title">Edit Maju Career Posting</h4>
+        <h4 class="card-title">Edit MMI Career Posting</h4>
         <div class="d-flex justify-content-end mb-3">
             <a href="{{ route('jobs.index') }}" class="btn btn-gradient-primary btn-sm">View All Career Posts</a>
         </div>

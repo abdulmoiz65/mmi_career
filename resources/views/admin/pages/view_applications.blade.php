@@ -5,7 +5,7 @@
     <div class="card">
       <div class="card-body">
         <div class="d-flex justify-content-between align-items-center flex-wrap">
-          <h4 class="card-title mb-3">MAJU Career Applications</h4>
+          <h4 class="card-title mb-3">MMI Career Applications</h4>
 
                 {{-- Success Message --}}
         @if(session('success'))

@@ -153,3 +153,8 @@
       .signup-container .promo { padding: 2rem 1.5rem; }
       .signup-container .signup-form { padding: 2rem 1.5rem; }
     }
+
+    /* Password eye icon */
+.signup-form .toggle-password:hover {
+  color: #000;
+}

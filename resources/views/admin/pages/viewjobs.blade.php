@@ -19,7 +19,7 @@
   <div class="col-lg-12 grid-margin stretch-card mx-auto">
     <div class="card">
       <div class="card-body">
-        <h4 class="card-title">Maju Career Management</h4>
+        <h4 class="card-title">MMI Career Management</h4>
 
         <div class="d-flex justify-content-end mb-3">
           <a href="{{ route('jobs.create') }}" class="btn btn-gradient-primary btn-sm">Add New Career Post</a>

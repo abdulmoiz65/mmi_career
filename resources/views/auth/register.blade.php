@@ -52,14 +52,20 @@
       <div class="mb-3">
         <input type="email" name="email" class="form-control" placeholder="Enter Email Address" value="{{ old('email') }}" required>
       </div>
-      <div class="row g-3">
-        <div class="col-md-6 mb-3">
-          <input type="password" name="password" class="form-control" placeholder="Enter Password" required>
-        </div>
-        <div class="col-md-6 mb-3">
-          <input type="password" name="password_confirmation" class="form-control" placeholder="Confirm Password" required>
-        </div>
-      </div>
+     <div class="row g-3">
+  <!-- Password -->
+  <div class="col-md-6 mb-3 position-relative">
+    <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password" required>
+    <i class="fa-solid fa-eye toggle-password" data-target="password" style="position:absolute; right:15px; top:50%; transform:translateY(-50%); cursor:pointer; color:#6c757d;"></i>
+  </div>
+
+  <!-- Confirm Password -->
+  <div class="col-md-6 mb-3 position-relative">
+    <input type="password" name="password_confirmation" id="confirm_password" class="form-control" placeholder="Confirm Password" required>
+    <i class="fa-solid fa-eye toggle-password" data-target="confirm_password" style="position:absolute; right:15px; top:50%; transform:translateY(-50%); cursor:pointer; color:#6c757d;"></i>
+  </div>
+</div>
+
 
       <button type="submit" class="btn btn-primary-gradient w-100 mb-3">
         Agree &amp; Join
@@ -78,5 +84,22 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.querySelectorAll('.toggle-password').forEach(icon => {
+    icon.addEventListener('click', () => {
+      const target = document.getElementById(icon.getAttribute('data-target'));
+      if (target.type === 'password') {
+        target.type = 'text';
+        icon.classList.remove('fa-eye');
+        icon.classList.add('fa-eye-slash');
+      } else {
+        target.type = 'password';
+        icon.classList.remove('fa-eye-slash');
+        icon.classList.add('fa-eye');
+      }
+    });
+  });
+</script>
+
 </body>
 </html>

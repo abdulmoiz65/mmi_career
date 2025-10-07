@@ -24,27 +24,6 @@
   }, 4000);
 
 
-
-
-let idleMinutes = 0;
-const maxIdleMinutes = 15; // match SESSION_LIFETIME
-
-function resetIdle() {
-    idleMinutes = 0;
-}
-document.onmousemove = resetIdle;
-document.onkeypress = resetIdle;
-document.onclick = resetIdle;
-document.onscroll = resetIdle;
-
-setInterval(() => {
-    idleMinutes++;
-    if (idleMinutes >= maxIdleMinutes) {
-        // optionally: show a warning first
-        alert("Session expired due to inactivity. You will be logged out.");
-        window.location.href = "{{ route('admin.logout') }}";
-    }
-}, 60000); // check every 1 minute
 </script>
 
 
