@@ -21,7 +21,7 @@ class OtpMail extends Mailable
 
     public function build()
     {
-        return $this->subject('Your MAJU Career password reset code')
+        return $this->subject('Your MMI Career password reset code')
                     ->view('emails.otp')
                     ->with([
                         'otp' => $this->otp,

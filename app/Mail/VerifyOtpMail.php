@@ -27,7 +27,7 @@ class VerifyOtpMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Verify Your Email - MAJU Career Portal')
+        return $this->subject('Verify Your Email - MMI Career Portal')
                     ->view('emails.verify-otp');
     }
 }

@@ -15,7 +15,7 @@
   @endif
 
   <div class="bg-primary p-4 text-white mb-4 rounded shadow-sm">
-    <h4 class="mb-0">Welcome, </h4>
+    <h4 class="mb-0 text-uppercase ">Welcome,  {{ Auth::guard('admin')->user()->name ?? 'Admin' }}</h4>
     <small>Admin Dashboard Overview</small>
   </div>
 
