@@ -20,7 +20,7 @@
           <!-- Left Panel -->
           <div class="col-md-5 gradient-left d-flex flex-column text-white p-4">
             <div class="flex-grow-1 d-flex flex-column justify-content-center text-center">
-              <img src="{{ asset('images/logofavwhite.png') }}" alt="Career illustration" class="img-fluid mb-4">
+              <img src="{{ asset('images/mmi-logo.png') }}" alt="Career illustration" class="img-fluid mb-4">
               <h5 class="fw-bold">Unlock Your Career</h5>
               <p class="small">
                 Explore opportunities from across the globe to grow, showcase skills,

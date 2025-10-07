@@ -12,7 +12,7 @@
 <body>
 <div class="signup-container">
   <div class="promo">
-    <img src="{{ asset('images/logofavwhite.png') }}" alt="MMI"/>
+    <img src="{{ asset('images/mmi-logo.png') }}" alt="MMI"/>
     <h2>MMI Career</h2>
     <p>We will send a one-time code (OTP) to your email to reset your password.</p>
   </div>

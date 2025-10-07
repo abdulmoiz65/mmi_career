@@ -13,7 +13,7 @@
 <div class="signup-container">
   <!-- Left Side -->
   <div class="promo">
-    <img src="{{ asset('images/logofavwhite.png') }}" alt="MMI"/>
+    <img src="{{ asset('images/mmi-logo.png') }}" alt="MMI"/>
     <h2>Verify Your Email</h2>
     <p>Enter the 6-digit OTP we just sent to <strong>{{ Auth::user()->email }}</strong></p>
   </div>

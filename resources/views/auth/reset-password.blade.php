@@ -12,7 +12,7 @@
 <body>
 <div class="signup-container">
   <div class="promo">
-    <img src="{{ asset('images/logofavwhite.png') }}" alt="MMI"/>
+    <img src="{{ asset('images/mmi-logo.png') }}" alt="MMI"/>
     <h2>Reset Your Password</h2>
     <p>Choose a secure password for your account.</p>
   </div>

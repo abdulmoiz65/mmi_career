@@ -15,7 +15,7 @@
 <div class="signup-container">
   <!-- Left Panel -->
   <div class="promo">
-    <img src="{{ asset('images/logofavwhite.png') }}" alt="Opportunities">
+    <img src="{{ asset('images/mmi-logo.png') }}" alt="Opportunities">
     <h2>Join and Explore Opportunities at MMI</h2>
     <p>Apply to jobs faster • Get personalized recommendations • Grow your career</p>
   </div>

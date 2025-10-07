@@ -12,7 +12,7 @@
 <body>
 <div class="signup-container">
   <div class="promo">
-    <img src="{{ asset('images/logofavwhite.png') }}" alt="MMI"/>
+    <img src="{{ asset('images/mmi-logo.png') }}" alt="MMI"/>
     <h2>Verify One-Time Code</h2>
     <p>Enter the 6-digit code we sent to your email.</p>
   </div>
